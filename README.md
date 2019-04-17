@@ -1,6 +1,6 @@
 ## Running on your computer (at least on Max/Linux):
 
-1. Ensure you have npm installed (go [here](https://github.com/SomeMoosery/mhr300_project) then open a terminal window and follow instructions on the npm website)
+1. Ensure you have npm installed (go [here](https://www.npmjs.com/get-npm) then open a terminal window and follow instructions on the npm website)
 2. Clone this repository by running `git clone https://github.com/SomeMoosery/mhr300_project` in your terminal, in the folder you want this project to live in
 3. Go into this repository by running `cd mhr300_project` in your terminal
 4. Install all necessary packages by running `npm install`
