@@ -5,7 +5,7 @@
 3. Go into this repository by running `cd mhr300_project` in your terminal
 4. Install all necessary packages by running `npm install`
 5. Start the development server by running `npm start`
-6. Navigate to https://localhost:3000/ in your browser if it doesn't do it automatically
+6. Navigate to http://localhost:3000/ in your browser if it doesn't do it automatically
 
 ## Available Scripts
 
