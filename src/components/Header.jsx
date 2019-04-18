@@ -3,6 +3,7 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
+import { Link } from 'react-router-dom';
 
 const appBarStyle = {
     position: 'relative',
@@ -26,7 +27,7 @@ class Header extends Component {
                 </Typography>
                 <Button color="primary" variant="outlined" style={headerButtonStyle}>Company</Button>
                 <Button color="primary" variant="outlined" style={headerButtonStyle}>Features</Button>
-                <Button color="primary" variant="outlined" style={headerButtonStyle}>Pricing</Button>
+                <Link to='/pricing'><Button color="primary" variant="outlined" style={headerButtonStyle}>Pricing</Button></Link>
             </Toolbar>
             </AppBar>
         )
