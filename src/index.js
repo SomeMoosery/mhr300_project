@@ -3,6 +3,7 @@ import { render } from 'react-dom';
 import './index.css';
 import App from './App';
 import Pricing from './components/Pricing';
+import Demo from './components/Demo';
 import * as serviceWorker from './serviceWorker';
 import { Route, BrowserRouter as Router } from 'react-router-dom'
 
@@ -11,6 +12,7 @@ render((
         <div>
             <Route path='/' component={App} />
             <Route path='/pricing' component={Pricing} />
+            <Route path='/demo' component={Demo} />
         </div>
     </Router>
 ), document.getElementById('root'));
