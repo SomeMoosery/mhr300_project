@@ -10,6 +10,7 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
+import { Link } from 'react-router-dom';
 
 // Images for facility headers
 import uw_hospital from '../assets/images/uw_hospital.png';
@@ -91,11 +92,11 @@ function Demo(props) {
         <div className={classes.heroUnit}>
           <div className={classes.heroContent}>
             <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
-              Welcome to IPS App
+              IPS App
             </Typography>
             <Typography variant="h6" align="center" color="textSecondary" paragraph>
-              Below is a list of facilities we have partnered with to create the most immersive,
-              least expensive indoor navigational system on the market in one easy-to-use platform.
+              Below is a list of facilities we have partnered with to provide you with 
+              the most immersive all-in-one indoor navigational system on the market.
             </Typography>
             <div className={classes.heroButtons}>
               <Grid container spacing={16} justify="center">
@@ -128,9 +129,7 @@ function Demo(props) {
                     </Typography>
                   </CardContent>
                   <CardActions style={{justifyContent:'center'}}>
-                    <Button size="small" color="primary">
-                        View
-                    </Button>
+                      <Link to='/demo_specific'><Button color='primary' size="small">View</Button></Link>
                   </CardActions>
                 </Card>
               </Grid>

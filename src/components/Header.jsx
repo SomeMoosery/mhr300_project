@@ -26,7 +26,7 @@ class Header extends Component {
                     Indoor Positioning App Service
                 </Typography>
                 <Button color='primary' variant='outlined' style={headerButtonStyle}>Company</Button>
-                <Button color='primary' variant='outlined' style={headerButtonStyle}>Features</Button>
+                <Link to='/data'><Button color='primary' variant='outlined' style={headerButtonStyle}>Data</Button></Link>
                 <Link to='/pricing'><Button color='primary' variant='outlined' style={headerButtonStyle}>Pricing</Button></Link>
                 <Link to='/demo'><Button color='primary' variant='outlined' style={headerButtonStyle}>Demo</Button></Link>
             </Toolbar>
