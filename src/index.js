@@ -7,6 +7,7 @@ import Demo_Specific from './components/Demo_Specific';
 import Demo from './components/Demo';
 import Data from './components/Data';
 import Data_Detail from './components/Data_Detail';
+import Home from './components/Home';
 import * as serviceWorker from './serviceWorker';
 import { Route, BrowserRouter as Router } from 'react-router-dom'
 
@@ -14,6 +15,7 @@ render((
     <Router>
         <div>
             <Route path='/' component={App} />
+            <Route path='/home' component={Home} />
             <Route path='/pricing' component={Pricing} />
             <Route path='/demo' component={Demo} />
             <Route path='/demo_specific' component={Demo_Specific} />

@@ -5,6 +5,8 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import { Link } from 'react-router-dom';
 
+import '../assets/styles/header_style.css';
+
 const appBarStyle = {
     position: 'relative',
 }
@@ -18,18 +20,18 @@ const headerButtonStyle = {
 }
 
 class Header extends Component {
-    render() { 
+    render() {
         return (
             <AppBar position='static' color='default' style={appBarStyle}>
-            <Toolbar>
-                <Typography variant="h6" color="primary" noWrap style={toolbarTitleStyle}>
-                    Indoor Positioning App Service
+                <Toolbar>
+                    <Typography variant="h6" color="primary" noWrap style={toolbarTitleStyle}>
+                        Indoor Positioning App Service
                 </Typography>
-                <Button color='primary' variant='outlined' style={headerButtonStyle}>Company</Button>
-                <Link to='/data'><Button color='primary' variant='outlined' style={headerButtonStyle}>Data</Button></Link>
-                <Link to='/pricing'><Button color='primary' variant='outlined' style={headerButtonStyle}>Pricing</Button></Link>
-                <Link to='/demo'><Button color='primary' variant='outlined' style={headerButtonStyle}>Demo</Button></Link>
-            </Toolbar>
+                    <Button color='primary' variant='outlined' style={headerButtonStyle}><Link to='/home' className='headerButton'>Company</Link></Button>
+                    <Button color='primary' variant='outlined' style={headerButtonStyle}><Link to='/data' className='headerButton'>Data</Link></Button>
+                    <Button color='primary' variant='outlined' style={headerButtonStyle}><Link to='/pricing' className='headerButton'>Pricing</Link></Button>
+                    <Button color='primary' variant='outlined' style={headerButtonStyle}><Link to='/demo' className='headerButton'>Demo</Link></Button>
+                </Toolbar>
             </AppBar>
         )
     }

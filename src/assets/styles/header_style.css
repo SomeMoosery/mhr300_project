@@ -1,0 +1,7 @@
+.headerButton {
+    text-decoration: none;
+}
+
+.headerButton:visited {
+    color: inherit;
+}
