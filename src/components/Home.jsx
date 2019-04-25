@@ -7,7 +7,6 @@ import beta from '../assets/images/beta.png';
 class Home extends Component {
 
     render() {
-        const innerWidth = window.innerWidth
         return (
             <div style={{width:'100%', height:'680px', position:'relative'}}>
                 <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom style={{ height: '1.5em', marginTop: '1em' }}>
@@ -29,7 +28,7 @@ class Home extends Component {
                     Sawyer Wedig
                 </Typography>
                 <Typography variant="h6" align="center" color="textSecondary" paragraph>
-                    Mathan Schilling
+                    Nathan Schilling
                 </Typography>
                 <img src={beta} alt='crosshairs' style={{ width: '100px', height: '100x', bottom:0, right:0, position:'absolute' }} />
             </div>
